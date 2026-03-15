@@ -162,7 +162,7 @@ A continuación preséntase unha planificación estimada do desenvolvemento comp
 | Probas e corrección de erros                 | 24/06/2026  | 2 semanas         | Realización de probas funcionais e corrección de erros detectados durante o desenvolvemento.                                                                   |
 | Implantación e documentación                 | 08/07/2026  | 1 semana          | Despregue da aplicación nun servidor web e elaboración da documentación final do proxecto.                                                                     |
 
-![Diagrama de Gantt](../doc-img/gantt.png)
+![Diagrama de Gantt](../doc/img/gantt.png)
 
 ---
 
