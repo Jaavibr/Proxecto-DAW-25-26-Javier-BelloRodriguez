@@ -62,17 +62,21 @@ Para o desenvolvemento desta plataforma web analizáronse diferentes alternativa
 **A1 — Desenvolvemento con PHP + MySQL + HTML + CSS + JavaScript**  
 Aplicación web desenvolvida desde cero utilizando PHP no backend e unha base de datos MySQL.
 
-**A2 — Desenvolvemento con Node.js + Express + HTML + CSS + JavaScript**  
-Creación dunha API REST utilizando Node.js para o backend e tecnoloxías web estándar no frontend.
+**A2 — Desenvolvemento con Node.js + Express + React + Sass + MariaDB**  
+Creación dunha API REST utilizando Node.js para o backend, react para o frontend e Sass para os estilos da aplicación.
 
-**A3 — Desenvolvemento con framework Laravel + HTML + CSS + JavaScript**  
-Uso do framework Laravel para estruturar a aplicación seguindo o patrón MVC.
+**A3 — Desenvolvemento con framework Laravel + Blade + MySQL + Bootstrap**  
+Uso do framework Laravel para estruturar a aplicación seguindo o patrón MVC. A interface desenvolveríase con **Blade** a modo de plantillas, combinado con **HTML**, **CSS**, **JavaScrpt** e **Bootstrap** para o deseño visual
 
-| Alternativa | Viabilidade técnica                                                                      | Viabilidade económica                                            | Temporalidade                                                                    | Valoración Global |
-| ----------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------- |
-| A1          | Alta (9/10): tecnoloxías coñecidas e fáciles de implementar.                             | Alta (9/10): hosting económico compatible con PHP e MySQL.       | Alta (8/10): desenvolvemento relativamente rápido.                               | **9/10**          |
-| A2          | Media (6/10): require coñecementos de Node.js e estruturación da API.                    | Alta (8/10): existen opcións de hosting gratuítas ou económicas. | Media (6/10): maior tempo de aprendizaxe ao requerir desenvolvemento en Node.js. | **7/10**          |
-| A3          | Media (7/10): Laravel facilita a estrutura do proxecto pero require aprendizaxe inicial. | Alta (8/10): hosting compatible con PHP.                         | Media (6/10): require tempo para dominar o framework.                            | **7/10**          |
+**A4 — Plataforma baseada en CMS (WordPress + WooCommerce)**
+Creación da plataforma empregando WordPress como CMS e WooCommerce para a xestión da tenda de merchandising e contidos.
+
+| Alternativa | Viabilidade técnica                                                                                                                                             | Viabilidade económica                                                   | Temporalidade                                                             | Valoración Global |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------- | ----------------- |
+| A1          | Alta (9/10): tecnoloxías coñecidas e fáciles de implementar.                                                                                                    | Alta (9/10): hosting económico compatible con PHP e MySQL.              | Alta (8/10): desenvolvemento relativamente rápido.                        | **9/10**          |
+| A2          | Media (6/10): arquitectura moderna e potente, pero require coñecementos para desenvolverse correctamente nas tecnoloxías empregadas para o frontend e o backend | Alta (8/10): existen opcións de hosting gratuítas ou económicas.        | Media (6/10): maior tempo de aprendizaxe e integración entre compoñentes. | **7/10**          |
+| A3          | Media (7/10): laravel facilita a estrutura do proxecto pero require aprendizaxe inicial.                                                                        | Alta (8/10): hosting compatible con PHP.                                | Media (6/10): require tempo para dominar o framework.                     | **7/10**          |
+| A4          | Alta (8/10): permite crear rapidamente unha aplicación web mediante o uso de plugins, sen desenvolver todo o sistema desde cero                                 | Media (6/10): algúns plugins e outras características poden ser de pago | Alta (9/10): implementación moi rápida                                    | **8/10**          |
 
 ---
 
@@ -97,11 +101,23 @@ Para o desenvolvemento do proxecto serán necesarios distintos recursos técnico
 
 ## Infraestrutura
 
-- Dominio web para acceder á plataforma.
-- Servidor de hosting compatible con PHP e MySQL.
-- Servidor de base de datos para almacenar usuarios, rutinas, produtos e rexistros de adestramento.
-- Espazo de almacenamento para contidos multimedia (imaxes, documentos, etc.).
-- Durante a fase de desenvolvemento e probas empregarase un contorno local baseado en **XAMPP**, que integra Apache, PHP e MySQL, sen necesidade de contratación dun hosting externo.
+**Dominio**
+Para acceder á plataforma será necesario contar cun dominio web propio, que permitirá identificar a aplicación e facilitar o acceso dos usurios.
+Por exemplo: .com ou .es.
+
+**Hosting web**
+O servidor hosting deberá cumprir uns requisitos mínimos que poidan garantir o correcto funcionamento da aplicación:
+
+-Soporte para PHP 8.1 ou superior
+-Servidor web Apache
+-Base de datos MySQL
+-Espazo de almacenamento mínimo de 10-20 GB SSD
+-Memoria RAM mínima de 2 GB
+-Certificado SSL para conexión segura
+-Acceso mediante FTP ou SSH
+-Panel de control do servidor
+
+Durante a fase de desenvolvemento e probas empregarase un contorno local baseado en **XAMPP**, que integra Apache, PHP e MySQL, sen necesidade de contratación dun hosting externo.
 
 ## Backend
 
@@ -145,6 +161,8 @@ A continuación preséntase unha planificación estimada do desenvolvemento comp
 | Implementación de funcionalidades adicionais | 10/06/2026  | 2 semanas         | Desenvolvemento de ferramentas como calculadora de RM, rexistro diario de adestramentos e melloras de usabilidade.                                             |
 | Probas e corrección de erros                 | 24/06/2026  | 2 semanas         | Realización de probas funcionais e corrección de erros detectados durante o desenvolvemento.                                                                   |
 | Implantación e documentación                 | 08/07/2026  | 1 semana          | Despregue da aplicación nun servidor web e elaboración da documentación final do proxecto.                                                                     |
+
+![Diagrama de Gantt](../doc-img/gantt.png)
 
 ---
 
