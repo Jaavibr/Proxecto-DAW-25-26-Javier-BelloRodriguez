@@ -8,57 +8,159 @@
   - [5- Normativa](#5--normativa)
   - [6- Melloras futuras](#6--melloras-futuras)
 
-> *EXPLICACION*: Este documento describe os requirimentos para "nome do proxecto" especificando que funcionalidade ofrecerá e de que xeito.
-
 ## 1- Descrición Xeral
 
->*EXPLICACION*: Descrición Xeral do proxecto
+O proxecto consiste no desenvolvemento dunha plataforma web orientada ao **powerlifting e ao adestramento de forza**, que permitirá conectar adestradores e usuarios nun mesmo entorno dixital.
+
+A aplicación funcionará como un sistema centralizado no que os adestradores poderán ofrecer os seus servizos mediante distintos tipos de subscricións, mentres que os usuarios poderán acceder a contidos, rexistrar os seus adestramentos e facer seguimento do seu progreso.
+
+A plataforma incluirá funcionalidades relacionadas coa xestión de rutinas, rexistro de datos deportivos, comunicación entre usuarios e adestradores, así como unha tenda de produtos deportivos.
 
 ## 2- Funcionalidades
 
->*EXPLICACION* Describir que servizos ou operacións se van poder realizar por medio do noso proxecto, indicando que actores interveñen en cada caso.
->
-> Enumeradas, de maneira que na fase de deseño poidamos definir o diagrama ou configuración correspondente a cada funcionalidade.
-> Cada función ten uns datos de entrada e uns datos de saída. Entre os datos de entrada e de saída, realízase un proceso, que debe ser explicado.
+A continuación descríbense as principais funcionalidades do sistema:
 
-Exemplo:
+| Acción                    | Descrición                                                             |
+| ------------------------- | ---------------------------------------------------------------------- |
+| Rexistro de usuario       | Permite crear unha conta como cliente ou adestrador                    |
+| Inicio de sesión          | Acceso á plataforma mediante credenciais                               |
+| Xestión de perfil         | Modificación de datos persoais e preferencias                          |
+| Creación de contidos      | Os adestradores poden publicar rutinas, programas e cursos             |
+| Sistema de subscricións   | Os adestradores crean plans con diferentes prezos e servizos           |
+| Compra de subscrición     | Os usuarios contratan un plan dun adestrador                           |
+| Rexistro de adestramentos | Os usuarios gardan datos dos seus exercicios (peso, repeticións, etc.) |
+| Calculadora de RM         | Permite calcular o peso máximo nunha repetición                        |
+| Seguimento do progreso    | Visualización da evolución do usuario                                  |
+| Sistema de mensaxería     | Comunicación directa entre usuario e adestrador                        |
+| Tenda de merchandising    | Compra de produtos deportivos                                          |
+| Xestión de pedidos        | Control de compras realizadas                                          |
+| Panel de administración   | Xestión global da plataforma                                           |
 
-| Acción   |  Descrición        |
-|----------|--------------------|
-| Alta de productos   | Dar de alta os productos na base de datos|
-| Modificar productos | Modificación de productos na base de datos|
-| Presentación dos productos  | Mostra dos productos por medio da páxina web |
+Cada funcionalidade implica:
+
+- **Entrada:** datos introducidos polo usuario
+- **Proceso:** validación e tratamento dos datos
+- **Saída:** resposta do sistema (visualización, confirmación...)
 
 ## 3- Tipos de usuarios
 
-> *EXPLICACION* Describir os tipos de usuario que poderán acceder ao noso sistema. Habitualmente os tipos de usuario veñen definidos polas funcionalidades ás cales teñen acceso. En termos xerais existen moitos grupos de usuarios: anónimos, novos, rexistrados, bloqueados, confirmados, verificados, administradores, etc.
->
-> Exemplo:
->
-> - Usuario xenérico, que terá acceso a ...
-> - Usuario técnico, que poderá...
+O sistema contará con distintos tipos de usuarios segundo o seu rol:
+
+### Usuario non rexistrado
+
+- Pode navegar pola plataforma
+- Pode ver contido público
+
+### Usuario cliente
+
+- Pode contratar subscricións
+- Pode rexistrar adestramentos
+- Pode acceder a contidos de adestradores
+- Pode comunicarse cos adestradores
+- Pode comprar produtos
+
+### Usuario adestrador
+
+- Pode crear e xestionar contidos
+- Pode definir subscricións
+- Pode xestionar clientes
+- Pode vender produtos
+- Pode comunicarse cos usuarios
+
+### Administrador
+
+- Xestionar usuarios
+- Controlar contidos
+- Supervisar a actividade da plataforma
+- Resolver incidencias
 
 ## 4- Contorno operacional
 
-> *EXPLICACION* Neste apartado deben describirse os recursos necesarios, dende o punto de vista do usuario, para poder operar coa aplicación web. Habitualmente consiste nun navegador web actualizado e unha conexión a internet.
-Se é necesario algún hardware ou software adicional, deberá indicarse.
+Para utilizar a aplicación, o usuario necesitará:
+
+- Un dispositivo con acceso a internet (ordenador, móbil ou tablet)
+- Un navegador web actualizado (Chrome, Firefox, Edge...)
+
+Non será necesario instalar e usar software adicional, xa que a aplicación funcionará integramente vía web.
 
 ## 5- Normativa
 
-> *EXPLICACION* Investigarase que normativa vixente afecta ao desenvolvemento do proxecto e de que maneira. O proxecto debe adaptarse ás esixencias legais dos territorios onde vai operar.
-> 
-> Pola natureza dos sistema de información, unha lei que se vai a ter que mencionar de forma obrigatoria é la [Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDPGDD)](https://www.boe.es/buscar/act.php?id=BOE-A-2018-16673). O ámbito da LOPDPGDD é nacional. Se a aplicación está pensada para operar a nivel europeo, tamén se debe facer referencia á [General Data Protection Regulation (GDPR)](https://eur-lex.europa.eu/eli/reg/2016/679/oj). Na documentación debe afirmarse que o proxecto cumpre coa normativa vixente.
->
-> Para cumplir a LOPDPGDD e/ou GDPR debe ter un apartado na web onde se indique quen é a persoa responsable do tratamento dos datos e para que fins se van utilizar. Habitualmente esta información estructúrase nos seguintes apartados:
->
-> - Aviso legal.
-> - Política de privacidade.
-> - Política de cookies.
->
-> É acosenllable ver [exemplos de webs](https://www.spotify.com/es/legal/privacy-policy/) que conteñan textos legais referenciando a LOPDPGDD ou GDPR.
+O proxecto deberá cumprir coa normativa vixente en materia de protección de datos e servizos dixitais.
+
+En particular:
+
+- **Lei Orgánica 3/2018 (LOPDGDD)** en España
+- **Regulamento Xeral de Protección de Datos (GDPR)** a nivel europeo
+
+Estas normativas afectan directamente ao deseño e desenvolvemento da aplicación, xa que obriga a implementar medidas técnicas e organizativas desde as primeiras fases do proxecto.
+
+### Protección de datos desde o deseño
+
+A aplicación deberá seguir o principio de “privacidade desde o deseño”, o que implica:
+
+- recoller só os datos estritamente necesarios (nome, email, datos de uso)
+- evitar almacenar información innecesaria
+- definir claramente a finalidade do tratamento dos datos
+
+### Sistema de autenticación e seguridade
+
+Será necesario implementar:
+
+- contrasinais cifrados (hash)
+- uso de conexión segura mediante HTTPS (SSL)
+- control de sesións de usuario
+- protección fronte a accesos non autorizados
+
+### Xestión de consentimento
+
+A aplicación deberá:
+
+- olicitar consentimento explícito ao rexistrarse
+- permitir aceptar ou rexeitar cookies
+- informar ao usuario sobre o uso dos seus datos
+
+### Dereitos dos usuarios
+
+O sistema debe permitir que os usuarios poidan:
+
+- acceder aos seus datos
+- modificar a súa información
+- eliminar a súa conta
+
+### Almacenamento e tratamento de datos
+
+- os datos deben almacenarse de forma segura na base de datos
+- evitar exposición de datos sensibles
+- limitar o acceso só a usuarios autorizados
+
+### Documentación legal obrigatoria
+
+A web deberá incluír:
+
+- aviso legal
+- política de privacidade
+- política de cookies
+
+### Impacto no desenvolvemento
+
+Estas obrigas implican que:
+
+- será necesario implementar medidas de seguridade desde o inicio
+- aumentará lixeiramente a complexidade do desenvolvemento
+- haberá que dedicar tempo á configuración legal e técnica
+
+Non obstante, estas medidas son estándar en aplicacións web actuais e non supoñen unha limitación significativa para o proxecto.
 
 ## 6- Melloras futuras
 
-> *EXPLICACION* É posible que o noso proxecto se centre en resolver un problema concreto que se poderá ampliar no futuro con novas funcionalidades, novas interfaces, etc.
+O proxecto poderá ampliarse no futuro mediante novas funcionalidades:
+
+- Sistema de estatísticas avanzadas
+- Plans automatizados mediante intelixencia artificial
+- Sistema de valoración de adestradores
+- Marketplace ampliado con posibles colaboracións
+- Sistema de competicións e rankings
+
+Estas melloras permitirán evolucionar a plataforma e adaptala ás necesidades do mercado.
 
 [**<-Anterior**](../../README.md)

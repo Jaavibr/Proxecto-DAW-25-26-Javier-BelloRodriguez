@@ -106,16 +106,23 @@ Para acceder á plataforma será necesario contar cun dominio web propio, que pe
 Por exemplo: .com ou .es.
 
 **Hosting web**
-O servidor hosting deberá cumprir uns requisitos mínimos que poidan garantir o correcto funcionamento da aplicación:
+Para o despregue real da aplicación contrataríase o plan **Business de Hostinger**, un hosting coñecido e de uso estendido, xa que ofrece características máis que suficientes para a fase inicial do proxecto.
 
--Soporte para PHP 8.1 ou superior
--Servidor web Apache
--Base de datos MySQL
--Espazo de almacenamento mínimo de 10-20 GB SSD
--Memoria RAM mínima de 2 GB
--Certificado SSL para conexión segura
--Acceso mediante FTP ou SSH
--Panel de control do servidor
+**Especificacións do hosting elixido:**
+
+- Provedor: **Hostinger**
+- Plan: **Business**
+- Prezo promocional: **3,29 €/mes** durante 48 meses, con posterior renovación de **16,99 €/mes**
+- Almacenamento: **50 GB NVMe**
+- Certificado **SSL gratuíto**
+- **Copias de seguridade diarias**
+- **CDN gratuíta** (Red de Entrega de Contenidos. Reduce latencia, acelera carga de archivos...)
+- Posibilidade de crear ata **50 sitios web**
+- Soporte para ata **5 aplicacións Node.js administradas**
+- Panel de control propio (**hPanel**)
+- Soporte técnico **24/7**
+
+Este plan considérase axeitado porque permite despregar unha aplicación web con base de datos, contidos multimedia, formularios, autenticación de usuarios e unha pequena tenda de merchandising, ademais de ofrecer marxe suficiente para medrar sen necesidade de migrar a un plan superior.
 
 Durante a fase de desenvolvemento e probas empregarase un contorno local baseado en **XAMPP**, que integra Apache, PHP e MySQL, sen necesidade de contratación dun hosting externo.
 
